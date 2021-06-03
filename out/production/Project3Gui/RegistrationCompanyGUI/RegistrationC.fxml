@@ -28,15 +28,15 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="130.0" layoutY="151.0" prefHeight="25.0" prefWidth="205.0" promptText="Business name" />
+                  <TextField fx:id="txtName" layoutX="130.0" layoutY="151.0" prefHeight="25.0" prefWidth="205.0" promptText="Business name" />
                   <Label layoutX="30.0" layoutY="207.0" prefHeight="19.0" prefWidth="100.0" text="Contact number">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="130.0" layoutY="204.0" prefHeight="25.0" prefWidth="205.0" promptText="Contact number" />
-                  <TextField layoutX="131.0" layoutY="260.0" prefHeight="25.0" prefWidth="205.0" promptText="Company email address" />
-                  <TextField layoutX="131.0" layoutY="311.0" prefHeight="25.0" prefWidth="205.0" promptText="Password" />
+                  <TextField fx:id="txtNum" layoutX="130.0" layoutY="204.0" prefHeight="25.0" prefWidth="205.0" promptText="Contact number" />
+                  <TextField fx:id="txtEmail" layoutX="131.0" layoutY="260.0" prefHeight="25.0" prefWidth="205.0" promptText="Company email address" />
+                  <TextField fx:id="txtPass" layoutX="131.0" layoutY="311.0" prefHeight="25.0" prefWidth="205.0" promptText="Password" />
                   <Label layoutX="30.0" layoutY="263.0" prefHeight="19.0" prefWidth="100.0" text="Email address">
                      <font>
                         <Font size="13.0" />
@@ -47,7 +47,7 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <Button layoutX="30.0" layoutY="375.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="308.0" text="Register company" />
+                  <Button layoutX="30.0" layoutY="375.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="308.0" onAction="#savecompany" text="Register company" />
                   <PasswordField layoutX="131.0" layoutY="311.0" prefHeight="25.0" prefWidth="204.0" promptText="Password" />
                   <Text fill="#a4a1a1" layoutX="30.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have a company account?" />
                   <Text fill="#a4a1a1" layoutX="31.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have a student account?" />
