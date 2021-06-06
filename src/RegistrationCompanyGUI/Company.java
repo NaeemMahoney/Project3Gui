@@ -1,3 +1,8 @@
+//Na'eem Mahoney
+//218190751
+//Project 3
+//Group 13
+
 package RegistrationCompanyGUI;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,6 +12,7 @@ import java.sql.SQLException;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
+//Variables for storing the companies information
 public class Company {
     private String url = "jdbc:mysql://localhost:3306/project";
     private String user = "root";
@@ -23,6 +29,7 @@ public class Company {
         this.companyPass = companyPass;
     }
 
+    //Getter and Setter for CompanyName
     public String getCompanyName() {
         return companyName;
     }
@@ -31,6 +38,7 @@ public class Company {
         this.companyName = companyName;
     }
 
+    //Getter and Setter for CompanyNum
     public String getCompanyNum() {
         return companyNum;
     }
@@ -39,6 +47,7 @@ public class Company {
         this.companyNum = companyNum;
     }
 
+    //Getter and Setter for CompanyEmail
     public String getCompanyEmail() {
         return companyEmail;
     }
@@ -47,6 +56,7 @@ public class Company {
         this.companyEmail = companyEmail;
     }
 
+    //Getter and Setter for CompanyPass
     public String getCompanyPass() {
         return companyPass;
     }
@@ -55,12 +65,15 @@ public class Company {
         this.companyPass = companyPass;
     }
 
+    //Operation that saves the information
     public void save() {
+        //Opening connection to the databsae
         Connection connection = null;   // manage connections
         PreparedStatement statement = null;     // query statement
         int x;
         String sql = "INSERT INTO company_table VALUES(?, ?, ?, ?)";
 
+        //Adding the variables to the SQL statement
         try {
             connection = DriverManager.getConnection(url, user, password);
 

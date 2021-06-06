@@ -40,6 +40,11 @@ public class RegistrationCController implements Initializable
     @FXML
     private ImageView RegisterImageview;
 
+    //Na'eem Mahoney
+    //218190751
+    //Project 3
+    //Group 13
+    //Action when button is clicked
     @FXML
     void savecompany(ActionEvent event) {
         Company c = new Company(txtName.getText(), txtNum.getText(), txtEmail.getText(), txtPass.getText());
